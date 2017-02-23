@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    padding: 0;
+    background-image: url(../img/alpha.jpg);
+}
+
+#app {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(256, 256, 256, 0.90);
+    border-radius: 5%;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+h2 {
+    margin-bottom: 2%
+}
+
+
+
+#input-parent{
+    width: 160px;
+    margin: 10px auto;
+    position: relative;
+}
+
+#player-input {
+    border: 1px solid green;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    font-size: 60px;
+    display: inline;
+}
+
+#submit {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#guesses {
+    margin: 40px auto 20px auto;
+}
+
+.guess{
+    display: inline;
+    font-size: 40px;
+    padding: 10px;
+    margin: 10px 5px;
+    border: solid 1px black;
+    border-radius: 10%;
+}
+
+#reset, hint {
+    margin: 10px;
+}
+
+img {
+    display: inline;
+    width: 200px;
+    height: 55px;
+}
+#footer {
+    width: 100%;
+    border-top: solid 2px black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+
+}
+
+
+
+
+
+
+

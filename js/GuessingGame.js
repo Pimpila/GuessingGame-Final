@@ -97,6 +97,7 @@ var turn = function (game) {
         }
         else if (newText === "You Lose :(" || newText === "You Win!") { 
             $("#submit, #hint").prop("disabled", true);
+            $("input").prop("disabled", true);
             $("h2").text("Press reset to play again");
             updateGuesses(game, input);
         }
@@ -130,6 +131,7 @@ $(document).ready(function(){
         $("h2").text("Pick between 1 and 100");
         $(".guess").text("-");
         $("#submit, #hint").prop("disabled", false);
+        $("input").prop("disabled", false);
     });
 
     $("#hint").on("click", function() {

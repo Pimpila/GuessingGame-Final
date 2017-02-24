@@ -92,7 +92,11 @@ var turn = function (game) {
         $("#player-input").val(""); // clear input form b seting value to ""
         $("h1").text(newText); // change h1 to return value of playersGuessSubmission
         
-        if (newText === "That's an invalid guess" || newText === "You already guessed that number") {
+        if (newText === "That's an invalid guess") {
+            $("h2").text("Pick a number between 1 and 100");
+        }
+        
+        else if (newText === "You already guessed that number") {
             $("h2").text("Guess Again!");
         }
         else if (newText === "You Lose :(" || newText === "You Win!") { 
@@ -132,9 +136,11 @@ $(document).ready(function(){
         $(".guess").text("-");
         $("#submit, #hint").prop("disabled", false);
         $("input").prop("disabled", false);
+        $("#hint").prop("disabled", false);
     });
 
     $("#hint").on("click", function() {
         $("h1").text(game.provideHint());
+        $("#hint").prop("disabled", true);
     });
 });
